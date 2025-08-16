@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nerathal Launcher - Tauri Prototype</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <video class="bg-video" autoplay muted loop playsinline>
+    <source src="assets/background.mp4" type="video/mp4">
+  </video>
+  <div class="bg-overlay"></div>
+  <main class="launcher">
+    <section class="left">
+      <div class="news">
+        <h3>Noticias</h3>
+        <div class="news-list" id="newsList"></div>
+      </div>
+    </section>
+
+    <section class="center">
+      <div class="brand">
+        <img src="assets/logo.png" alt="logo">
+        <h1>Nerathal</h1>
+      </div>
+
+      <div class="controls">
+        <button id="playBtn" class="primary">Jugar</button>
+        <button id="verifyBtn">Verificar</button>
+        <button id="updateBtn">Actualizar</button>
+      </div>
+
+      <div class="progress" id="progressBar" aria-hidden="true">
+        <div class="bar" id="barInner" style="width:0%"></div>
+        <div class="label" id="barLabel">Esperando...</div>
+      </div>
+    </section>
+
+    <section class="right">
+      <div class="server-card">
+        <h3>Estado del servidor</h3>
+        <div id="serverStatus">
+          <div class="dot offline" id="serverDot"></div>
+          <div class="details">
+            <div id="serverText">Cargando...</div>
+            <div id="serverPlayers" class="muted">—</div>
+          </div>
+        </div>
+        <div class="extra" id="serverExtra"></div>
+      </div>
+
+      <div class="login-card">
+        <h4>Acceso rápido</h4>
+        <input id="loginUser" placeholder="Usuario">
+        <input id="loginPass" type="password" placeholder="Contraseña">
+        <button id="loginBtn">Entrar</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="small">© Nerathal — Prototype Launcher</footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+This project uses the existing prototype UI from /var/www/html/launcher-web as the frontend. Copy or symlink the assets directory to /var/www/html/tauri-launcher/src/assets if you want the bundle to include them.
+
+Example:
+ln -s /var/www/html/launcher-web/assets /var/www/html/tauri-launcher/src/assets

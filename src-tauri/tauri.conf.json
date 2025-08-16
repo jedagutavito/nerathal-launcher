@@ -1,0 +1,26 @@
+{
+  "package": {
+    "productName": "Nerathal Launcher",
+    "version": "0.1.0"
+  },
+  "tauri": {
+    "bundle": {
+      "identifier": "com.nerathal.launcher",
+      "targets": ["deb","msi","appimage","msi"]
+    },
+    "windows": [
+      {
+        "iconPath": "icons/icon.ico"
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "build": {
+    "beforeBuildCommand": "",
+    "beforeDevCommand": "",
+    "devPath": "../src",
+    "distDir": "../src"
+  }
+}
